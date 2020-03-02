@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'rtAng';
   public pName = "Parrent Virus";
-  public cMessage=" - ";
+  public cMessage=" - "; 
 }
