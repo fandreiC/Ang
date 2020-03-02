@@ -1,0 +1,37 @@
+<p>test works!</p>
+
+<div>
+    <h4>{{"hello " + DataFromParrent }}</h4>
+    <button (click)="fireEvent()" >SendToParrent_Event</button>
+</div>
+
+<button (click)= "onClick2()">GreetMessageOnConsole</button>
+<h4>Greeting : {{greeting}} </h4>
+<button (click)= "onClick($event)">GreetMessage$Event</button>
+<h4></h4>
+<button (click)= "onClick($event)">GreetMessage$Event</button>
+template : 
+<input #myInput type="text" >
+<button (click)="logMessage(myInput.value)" >Log</button>
+two way binding :
+<input [(ngModel)]="name" type="text" >
+{{name}}
+<br> Directives: 
+<h4  *ngIf="displayName; then thanTemplate; else elseTemplate"  > Visible or not visible (if) ON here</h4>
+<ng-template #thanTemplate>
+    <h4>
+        Visible is ON !
+    </h4>
+</ng-template >
+<ng-template #elseTemplate>
+    <h4>
+        Visible is OFF !
+    </h4>
+</ng-template >
+<br> ForIteration:
+<div *ngFor="let color of colors; index as i; first as f">
+    <h4 *ngIf="!(color === 'blue') ">
+        First? {{f}} , Index: {{i}} , Color is : {{color}}
+    </h4>
+</div>
+
