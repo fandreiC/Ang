@@ -1,0 +1,8 @@
+[
+    { "id": 1 , "name": "Angular"},
+    { "id": 2 , "name": "Node" },
+    { "id": 3 , "name": "OracleDB" },
+    { "id": 4 , "name": "DotNet" },
+    { "id": 5 , "name": "Bootstrap" }
+    ]
+    

@@ -1,0 +1,7 @@
+<p>department works!</p>
+<div>
+    <h4>Departments: </h4>
+    <ul *ngFor="let department of departments">
+        <li (click)="OnSelect(department)" >dep nr{{department.id}} - is {{department.name}} </li>
+    </ul>
+</div>
