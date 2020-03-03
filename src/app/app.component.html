@@ -1,11 +1,15 @@
 <mat-toolbar color="primary">  
     <h1>  
-    My Angular Store  {{cMessage}}
+    My AStore  {{cMessage}}
     </h1>  
     <button mat-button routerLink="/">Home</button>  
     <button mat-button routerLink="/about">About</button>
     <button mat-button routerLink="/test">Test</button>
+    <button mat-button routerLink="/empLst">EMP</button>
+    <button mat-button routerLink="/depLst">DEP</button>
 </mat-toolbar>
-    <app-test (childEvent)="cMessage=$event" [parrentData]="pName" ></app-test>
+  <!--  <app-test (childEvent)="cMessage=$event" [parrentData]="pName" ></app-test> -->
+    <br>
+    <app-employee-list></app-employee-list>
     <br>
 <router-outlet></router-outlet>
